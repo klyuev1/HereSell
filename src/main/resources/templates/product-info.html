@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HereSell</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+</head>
+
+<body class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">HereSell</a>
+</nav>
+<hr>
+
+<h4 class="mt-4">Подробная информация о товаре</h4>
+<div th:each="img : ${images}">
+    <img th:src="@{/images/__${img.id}__}" class="img-thumbnail" alt="Product Image" height="60px" />
+    <br />
+    <br />
+</div>
+<b>Название товара: </b><span th:text="${product.title}" class="font-weight-bold"></span><br>
+<b>Описание товара: </b><span th:text="${product.description}" class="font-italic"></span><br>
+<b>Цена: </b><span th:text="${product.price}" class="font-weight-bold text-success"></span><br>
+<b>Город: </b><span th:text="${product.city}" class="font-weight-bold"></span><br>
+<b>Автор: </b><span th:text="${product.user.name}" class="font-weight-bold"></span><br>
+<b>Номер телефона: </b><span th:text="${product.user.numberPhone}" class="font-weight-bold"></span><br>
+<hr>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>HereSell</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>HereSell</h1><hr>-->
+<!--    <h4>Подробная информация о товаре</h4>-->
+<!--    <div th:each="img : ${images}">-->
+<!--        <img th:src="@{/images/__${img.id}__}" height="60px" /><br /><br />-->
+<!--    </div>-->
+<!--    <b>Название товара: </b><span th:text="${product.title}"></span><br>-->
+<!--    <b>Описание товара: </b><span th:text="${product.description}"></span><br>-->
+<!--    <b>Цена: </b><span th:text="${product.price}"></span><br>-->
+<!--    <b>Город: </b><span th:text="${product.city}"></span><br>-->
+<!--    <b>Автор: </b><span th:text="${product.user.name}"></span><br>-->
+<!--    <b>Номер телефона: </b><span th:text="${product.user.numberPhone}"></span><br>-->
+<!--    <hr>-->
+
+<!--</body>-->
+<!--</html>-->

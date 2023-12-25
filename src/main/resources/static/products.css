@@ -1,0 +1,145 @@
+/* Пример базовых стилей */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header__title {
+    margin: 0;
+}
+
+.header__line {
+    border: 1px solid #ffffff;
+}
+
+.header__subtitle {
+    margin: 0;
+}
+
+.header__user-info {
+    margin-top: 20px;
+}
+
+.header__username {
+    margin: 0;
+}
+
+.header__login {
+    margin-top: 20px;
+}
+
+.header__login-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header__search-form {
+    margin-top: 20px;
+}
+
+.header__search-label {
+    margin-right: 10px;
+}
+
+.header__search-input {
+    width: 200px;
+}
+
+.header__search-button {
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.main {
+    padding: 20px;
+}
+
+.main__products {
+    margin-top: 20px;
+}
+
+.main__product {
+    margin-bottom: 10px;
+}
+
+.main__product-title {
+    font-weight: bold;
+}
+
+.main__product-price {
+    color: #e74c3c;
+}
+
+.main__product-link {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.main__no-products {
+    margin-top: 20px;
+}
+
+.main__no-products-message {
+    margin: 0;
+    color: #e74c3c;
+}
+
+.main__separator {
+    margin-top: 20px;
+    border: 1px solid #dddddd;
+}
+
+.main__create-product {
+    margin-top: 20px;
+}
+
+.main__create-product-title {
+    margin: 0;
+}
+
+.footer {
+    background-color: #34495e;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #3498db;
+}
